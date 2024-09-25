@@ -18,6 +18,7 @@ set_autoformat({ "lua" }, false)
 set_autoformat({ "perl" }, false)
 set_autoformat({ "yaml" }, false)
 set_autoformat({ "sh" }, false)
+set_autoformat({ "cmake" }, false)
 
 vim.api.nvim_create_user_command('F', function()
     vim.cmd('silent !clang-format -style=file:$HOME/.clang-format -i %')

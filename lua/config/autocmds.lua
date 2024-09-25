@@ -21,7 +21,7 @@ set_autoformat({ "sh" }, false)
 set_autoformat({ "cmake" }, false)
 
 vim.api.nvim_create_user_command('F', function()
-    vim.cmd('silent !clang-format -style=file:$HOME/.clang-format -i %')
+    vim.cmd('silent !clang-format -i %')
     vim.cmd('edit!')
 end, {})
 
@@ -31,7 +31,7 @@ vim.api.nvim_create_user_command('FBA', function()
 end, {})
 
 vim.api.nvim_create_user_command('F8', function()
-    vim.cmd('silent !clang-format -style=file:$HOME/.clang-format.csjp -i %')
+    vim.cmd('silent !clang-format -style=file:$HOME/.clang-format -i %')
     vim.cmd('edit!')
 end, {})
 

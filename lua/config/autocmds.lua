@@ -50,3 +50,5 @@ vim.api.nvim_set_keymap(
   "<cmd>lua vim.lsp.buf.code_action({apply=true})<CR>",
   { noremap = true, silent = true }
 )
+
+vim.api.nvim_set_keymap('n', '<Esc>[2;5~', '"+y', { noremap = true, silent = true })

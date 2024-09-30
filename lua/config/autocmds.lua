@@ -51,4 +51,11 @@ vim.api.nvim_set_keymap(
   { noremap = true, silent = true }
 )
 
+-- does this help on clipboard issues at all?
 vim.api.nvim_set_keymap('n', '<Esc>[2;5~', '"+y', { noremap = true, silent = true })
+
+-- Run clang-tidy on the current file and populate quickfix list
+vim.api.nvim_create_user_command('Tidy', function()
+  vim.cmd('cexpr system("clang-tidy-diff.sh")')
+  vim.cmd('copen')  -- Open the quickfix list
+end, {})

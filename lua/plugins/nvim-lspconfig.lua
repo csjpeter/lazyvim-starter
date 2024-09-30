@@ -32,6 +32,10 @@ return {
 								"--completion-style=detailed",
 								"--function-arg-placeholders",
 								"--fallback-style=llvm",
+								"--log=verbose",
+								"--limit-results=0",
+								"--limit-references=0",
+								"--header-insertion-decorators",
 							},
 							init_options = {
 								usePlaceholders = true,

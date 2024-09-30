@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 
 -- Copy selection to system clipboard using xclip
---vim.api.nvim_set_keymap("v", "<C-c>", '"*y:call system("xclip -selection clipboard", @*)<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<C-c>", '"*y:call system("xclip -selection clipboard", @*)<CR>', { noremap = true, silent = true })
 
 -- Paste from system clipboard using xclip
 --vim.api.nvim_set_keymap("n", "<C-v>", ':r !xclip -o -selection clipboard<CR>', { noremap = true, silent = true })

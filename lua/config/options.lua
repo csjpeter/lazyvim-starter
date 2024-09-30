@@ -9,3 +9,6 @@ vim.opt.tabstop = 8
 vim.opt.shiftwidth = 8
 vim.opt.expandtab = false
 
+-- views can only be fully collapsed with the global statusline
+vim.opt.laststatus = 3
+

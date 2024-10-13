@@ -42,7 +42,7 @@ require("lazy").setup({
     rtp = {
       -- disable some rtp plugins
       disabled_plugins = {
-		"tokyonight",
+        "tokyonight",
         "gzip",
         -- "matchit",
         -- "matchparen",

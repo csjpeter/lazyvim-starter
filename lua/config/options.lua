@@ -5,9 +5,9 @@
 vim.o.backup = true
 vim.opt.list = false
 
--- vim.opt.tabstop = 8
--- vim.opt.shiftwidth = 8
--- vim.opt.expandtab = false
+vim.opt.tabstop = 8
+vim.opt.shiftwidth = 8
+vim.opt.expandtab = false
 
 -- true by default, but let smake sure
 vim.g.editorconfig = true

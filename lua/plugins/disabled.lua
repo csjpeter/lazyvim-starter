@@ -25,7 +25,7 @@ return {
   -- { "yetone/avante.nvim", enabled = true },
   -- image pasting for avant AI
   { "HakonHarnes/img-clip.nvim", enabled = true },
-  -- avant AI needs this
+  -- avante AI needs this
   { "MeanderingProgrammer/render-markdown.nvim", enabled = true },
   -- Error messages into dialog in the top right corner
   { "rcarriga/nvim-notify", enabled = true },
@@ -33,9 +33,9 @@ return {
   { "mfussenegger/nvim-lint", enabled = false },
   -- "" {} () all the annoying pretyping
   { "echasnovski/mini.pairs", enabled = false },
-  -- avant AI needs it
+  -- avante AI needs it
   { "echasnovski/mini.ai", enabled = true },
-  -- avant AI needs it
+  -- avante AI needs it
   { "echasnovski/mini.icons", enabled = true },
   -- Styling tabline
   { "akinsho/bufferline.nvim", enabled = false },
@@ -51,7 +51,7 @@ return {
   { "stevearc/conform.nvim", enabled = false },
   -- Initial view with initial list of shortcut keys
   { "nvimdev/dashboard-nvim", enabled = false },
-  -- Some kind of dialogs instead of classing vim command line (neded by avant AI)
+  -- Some kind of dialogs instead of classing vim command line (neded by avante AI)
   { "stevearc/dressing.nvim", enabled = true },
   -- Support for autocompletion with code skeletons
   { "rafamadriz/friendly-snippets", enabled = false },

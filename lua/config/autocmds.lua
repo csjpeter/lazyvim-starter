@@ -21,31 +21,31 @@ set_autoformat({ "sh" }, false)
 set_autoformat({ "cmake" }, false)
 
 vim.api.nvim_create_user_command('F', function()
-    vim.cmd('silent !clang-format -i %')
-    vim.cmd('edit!')
+  vim.cmd('silent !clang-format -i %')
+  vim.cmd('edit!')
 end, {})
 
 vim.api.nvim_create_user_command('FBA', function()
-    vim.cmd('silent !clang-format -style=file:$HOME/.clang-format.darek -i %')
-    vim.cmd('edit!')
+  vim.cmd('silent !clang-format -style=file:$HOME/.clang-format.darek -i %')
+  vim.cmd('edit!')
 end, {})
 
 vim.api.nvim_create_user_command('F8', function()
-    vim.cmd('silent !clang-format -style=file:$HOME/.clang-format -i %')
-    vim.cmd('edit!')
+  vim.cmd('silent !clang-format -style=file:$HOME/.clang-format -i %')
+  vim.cmd('edit!')
 end, {})
 
 vim.api.nvim_create_user_command('FCC', function()
-    vim.cmd('silent !clang-format -style=file:$HOME/.clang-format.cc -i %')
-    vim.cmd('edit!')
+  vim.cmd('silent !clang-format -style=file:$HOME/.clang-format.cc -i %')
+  vim.cmd('edit!')
 end, {})
 
 vim.api.nvim_create_user_command('TN', function()
-    vim.cmd('Telescope notify')
+  vim.cmd('Telescope notify')
 end, {})
 
 vim.api.nvim_set_keymap('n', 'A',
-	'<cmd>lua vim.lsp.buf.code_action({apply=true})<CR>',
-	{ noremap = true, silent = true }
+'<cmd>lua vim.lsp.buf.code_action({apply=true})<CR>',
+{ noremap = true, silent = true }
 )
 

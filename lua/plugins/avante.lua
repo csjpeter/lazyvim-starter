@@ -8,6 +8,7 @@ return {
     opts = {
       --provider = "chatgpt",
       --provider = "ollama",
+      provider = "copilot",
       vendors = {
         ---@type AvanteProvider
         chatgpt = {
@@ -60,7 +61,7 @@ return {
         ---@type AvanteProvider
         ollama = {
           ["local"] = true,
-          endpoint = "http://192.168.50.108:11434/v1",
+          endpoint = os.getenv("OLLAMA_URL"),
           model = "codegemma",
           parse_curl_args = function(opts, code_opts)
             return {

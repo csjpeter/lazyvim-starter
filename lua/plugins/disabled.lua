@@ -70,30 +70,30 @@ return {
   { "nvim-telescope/telescope-fzf-native.nvim", enabled = false },
   -- Builds and provides AST of the source under edit
   { "nvim-treesitter/nvim-treesitter", enabled = false,
-  opts = {
-    highlight = { enable = true, },
-    --incremental_selection = { enable = true },
-    --textobjects = { enable = true },
+    opts = {
+      highlight = { enable = true, },
+      --incremental_selection = { enable = true },
+      --textobjects = { enable = true },
+    },
   },
-},
---
-{ "nvim-treesitter/nvim-treesitter-textobjects", enabled = false },
--- Use below command to see highlight group of word under cursor
--- :TSHighlightCapturesUnderCursor
-{ "nvim-treesitter/playground", enabled = false },
--- left sidebar with filesystem tree navigation
-{ "nvim-neo-tree/neo-tree.nvim", enabled = false },
--- To be able to configure, what linters should be installed
-{ "williamboman/mason-lspconfig.nvim", enabled = true,
-ensure_installed = {
-  "ansible-lint",
-  -- "clang-format",
-  -- "clangd",
-  -- "cmakelang",
-  -- "cmakelint",
-  "flake8",
-  "yamllint",
-},
+  --
+  { "nvim-treesitter/nvim-treesitter-textobjects", enabled = false },
+  -- Use below command to see highlight group of word under cursor
+  -- :TSHighlightCapturesUnderCursor
+  { "nvim-treesitter/playground", enabled = false },
+  -- left sidebar with filesystem tree navigation
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+  -- To be able to configure, what linters should be installed
+  { "williamboman/mason-lspconfig.nvim", enabled = true,
+    ensure_installed = {
+      "ansible-lint",
+      -- "clang-format",
+      -- "clangd",
+      -- "cmakelang",
+      -- "cmakelint",
+      "flake8",
+      "yamllint",
+    },
   },
   -- git UI
   { "jesseduffield/lazygit", enabled = true },

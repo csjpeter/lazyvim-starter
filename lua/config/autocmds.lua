@@ -45,7 +45,7 @@ vim.api.nvim_create_user_command('TN', function()
 end, {})
 
 vim.api.nvim_set_keymap('n', 'A',
-'<cmd>lua vim.lsp.buf.code_action({apply=true})<CR>',
-{ noremap = true, silent = true }
+  '<cmd>lua vim.lsp.buf.code_action({apply=true})<CR>',
+  { noremap = true, silent = true }
 )
 

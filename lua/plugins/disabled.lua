@@ -19,16 +19,24 @@ return {
   { "williamboman/mason.nvim", enabled = true, lazy = false },
   -- Code style, linter suggestions
   { "neovim/nvim-lspconfig", enabled = true },
+  -- Copilot
+  { "zbirenbaum/copilot", enabled = false },
+  -- yetone/avante.nvim AI plugin mimicing Cursor IDE
+  -- { "yetone/avante.nvim", enabled = true },
+  -- image pasting for avante AI
+  { "HakonHarnes/img-clip.nvim", enabled = true },
+  -- avante AI needs this
+  { "MeanderingProgrammer/render-markdown.nvim", enabled = true },
   -- Error messages into dialog in the top right corner
   { "rcarriga/nvim-notify", enabled = true },
   --
   { "mfussenegger/nvim-lint", enabled = false },
   -- "" {} () all the annoying pretyping
   { "echasnovski/mini.pairs", enabled = false },
-  --
-  { "echasnovski/mini.ai", enabled = false },
-  --
-  { "echasnovski/mini.icons", enabled = false },
+  -- avante AI needs it
+  { "echasnovski/mini.ai", enabled = true },
+  -- avante AI needs it
+  { "echasnovski/mini.icons", enabled = true },
   -- Styling tabline
   { "akinsho/bufferline.nvim", enabled = false },
   -- color schema
@@ -43,8 +51,8 @@ return {
   { "stevearc/conform.nvim", enabled = false },
   -- Initial view with initial list of shortcut keys
   { "nvimdev/dashboard-nvim", enabled = false },
-  -- Some kind of dialogs instead of classing vim command line
-  { "stevearc/dressing.nvim", enabled = false },
+  -- Some kind of dialogs instead of classing vim command line (neded by avante AI)
+  { "stevearc/dressing.nvim", enabled = true },
   -- Support for autocompletion with code skeletons
   { "rafamadriz/friendly-snippets", enabled = false },
   -- Marks, signs changed lines since last git commit
@@ -68,10 +76,10 @@ return {
   { "nvim-lua/plenary.nvim", enabled = true },
   -- Super loved search/find algorithm instead of grep
   { "nvim-telescope/telescope-fzf-native.nvim", enabled = false },
-  -- Builds and provides AST of the source under edit
-  { "nvim-treesitter/nvim-treesitter", enabled = false,
+  -- Builds and provides AST of the source under edit (needed by avante AI)
+  { "nvim-treesitter/nvim-treesitter", enabled = true,
     opts = {
-      highlight = { enable = true, },
+      highlight = { enable = false, },
       --incremental_selection = { enable = true },
       --textobjects = { enable = true },
     },

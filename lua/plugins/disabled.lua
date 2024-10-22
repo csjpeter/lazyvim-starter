@@ -20,7 +20,7 @@ return {
   -- Code style, linter suggestions
   { "neovim/nvim-lspconfig", enabled = true },
   -- Copilot
-  { "zbirenbaum/copilot", enabled = false },
+  { "zbirenbaum/copilot", enabled = true },
   -- yetone/avante.nvim AI plugin mimicing Cursor IDE
   -- { "yetone/avante.nvim", enabled = true },
   -- image pasting for avante AI

@@ -9,5 +9,9 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
---vim.opt.clipboard = "unnamedplus"
+-- true by default, but let smake sure
+vim.g.editorconfig = true
+
+-- views can only be fully collapsed with the global statusline
+vim.opt.laststatus = 3
 

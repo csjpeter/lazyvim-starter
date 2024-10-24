@@ -31,7 +31,7 @@ vim.api.nvim_create_user_command('FBA', function()
 end, {})
 
 vim.api.nvim_create_user_command('F8', function()
-  vim.cmd('silent !clang-format -style=file:$HOME/.clang-format -i %')
+  vim.cmd('silent !clang-format -style=file:$HOME/.clang-format.csjp -i %')
   vim.cmd('edit!')
 end, {})
 
@@ -49,3 +49,11 @@ vim.api.nvim_set_keymap('n', 'A',
   { noremap = true, silent = true }
 )
 
+-- does this help on clipboard issues at all?
+vim.api.nvim_set_keymap('n', '<Esc>[2;5~', '"+y', { noremap = true, silent = true })
+
+-- Run clang-tidy on the current file and populate quickfix list
+vim.api.nvim_create_user_command('Tidy', function()
+  vim.cmd('cexpr system("clang-tidy-diff.sh")')
+  vim.cmd('copen')  -- Open the quickfix list
+end, {})
